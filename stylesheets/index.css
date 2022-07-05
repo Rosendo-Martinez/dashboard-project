@@ -1,0 +1,84 @@
+.header {
+    padding: 15px 30px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: 
+        'search-bar notifications'
+        'user-welcome project-menu';
+    gap: 15px;
+}
+
+.search-bar {
+    grid-area: search-bar;
+}
+
+.notifications {
+    grid-area: notifications;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 15px;
+    justify-content: flex-end;
+}
+
+.notifications .display-name {
+    white-space: nowrap;
+}
+
+.user-welcome {
+    grid-area: user-welcome;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.username {
+    white-space: nowrap;
+}
+
+.project-menu {
+    grid-area: project-menu;
+    width: min(100%, 400px);
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.project-menu button {
+    background-color: rgb(62, 163, 196);
+    border-radius: 20px;
+    border: unset;
+    padding: 0.5rem 0.8rem;
+    width: 100px;
+    text-align: center;
+}
+
+.user-photo-icon-large, .user-photo-icon-small {
+    border-radius: 100px;
+}
+
+.user-photo-icon-large {
+    width: 110px;
+}
+
+.user-photo-icon-small {
+    width: 50px;
+}
+
+.icon {
+    width: 35px;
+}
+
+#search-bar-input {
+    width: calc(100% - 50px);
+    box-sizing: border-box;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
