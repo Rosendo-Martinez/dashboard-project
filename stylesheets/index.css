@@ -99,3 +99,35 @@
 .sidebar {
     grid-area: sidebar;
 }
+
+/*main: user projects */
+.user-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 25px;
+}
+
+.user-projects-container-title {
+    padding-left: 20px;
+}
+
+.project-title, .project-description {
+    overflow: hidden;
+}
+
+.user-projects > div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.project-icons {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.project-description {
+    margin-bottom: 20px;
+    height: 150px;
+}
