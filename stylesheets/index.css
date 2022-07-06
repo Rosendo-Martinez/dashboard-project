@@ -1,3 +1,23 @@
+.page-container {
+    display: grid;
+    grid-template-columns: 1fr 5.6fr;
+    grid-template-areas: 
+        'dashboard header'
+        'dashboard main';
+}
+
+.dashboard {
+    grid-area: dashboard;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
 /* header */
 .header {
     padding: 15px 30px;
